@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'Demo' do
+  source 'https://github.com/CocoaPods/Specs.git'
+  source 'git@github.com:berbix/berbix-ios-spec.git'
+
+  pod 'Berbix', '2.0.1'
+end
