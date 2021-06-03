@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9LA-ad-zYh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ai3-vh-hGT">
+            <objects>
+                <viewController id="9LA-ad-zYh" customClass="ViewController" customModule="Berbix_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WFc-eW-dWu"/>
+                        <viewControllerLayoutGuide type="bottom" id="H0y-4n-CrB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cdh-oD-PhC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-Dl-O3a">
+                                <rect key="frame" x="63" y="192" width="288" height="87"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px7-ay-AHG">
+                                <rect key="frame" x="161" y="495.5" width="92" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Start Flow"/>
+                                <connections>
+                                    <action selector="startFlowFromAPI:" destination="9LA-ad-zYh" eventType="touchUpInside" id="3Gc-h2-LIE"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ0-kX-OON">
+                                <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Hi-TH-7j7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rDb-Dl-O3a" firstAttribute="centerX" secondItem="Cdh-oD-PhC" secondAttribute="centerX" id="Lz4-ue-LEq"/>
+                            <constraint firstItem="pQ0-kX-OON" firstAttribute="centerY" secondItem="1Hi-TH-7j7" secondAttribute="centerY" id="ckr-sp-oqR"/>
+                            <constraint firstItem="px7-ay-AHG" firstAttribute="centerX" secondItem="Cdh-oD-PhC" secondAttribute="centerX" id="gLS-yv-LZF"/>
+                            <constraint firstItem="rDb-Dl-O3a" firstAttribute="top" secondItem="WFc-eW-dWu" secondAttribute="bottom" constant="148" id="hCE-RW-Y5e"/>
+                            <constraint firstItem="px7-ay-AHG" firstAttribute="top" secondItem="pQ0-kX-OON" secondAttribute="bottom" constant="32" id="zNK-dp-Ldo"/>
+                            <constraint firstItem="pQ0-kX-OON" firstAttribute="centerX" secondItem="Cdh-oD-PhC" secondAttribute="centerX" id="zWV-fP-quG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="pQ0-kX-OON" id="rbk-NC-ca5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIw-k1-rPa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="288" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
