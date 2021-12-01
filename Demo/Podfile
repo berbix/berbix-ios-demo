@@ -1,8 +1,10 @@
 use_frameworks!
 
 target 'Demo' do
-  source 'https://github.com/CocoaPods/Specs.git'
+  # Uncomment the line below for CocoaPods <= 1.8
+  #source 'https://github.com/CocoaPods/Specs.git'
+  source 'https://cdn.cocoapods.org/'
   source 'git@github.com:berbix/berbix-ios-spec.git'
 
-  pod 'Berbix', '2.0.1'
+  pod 'Berbix', '3.0.1'
 end
