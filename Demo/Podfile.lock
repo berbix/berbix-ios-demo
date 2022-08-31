@@ -1,23 +1,20 @@
 PODS:
-  - Berbix (2.0.1):
-    - Sentry (~> 6.2.1)
-  - Sentry (6.2.1):
-    - Sentry/Core (= 6.2.1)
-  - Sentry/Core (6.2.1)
+  - Berbix (3.1.0):
+    - BerbixAdvanced (= 0.2.0)
+  - BerbixAdvanced (0.2.0)
 
 DEPENDENCIES:
-  - Berbix (= 2.0.1)
+  - Berbix (= 3.1.0)
 
 SPEC REPOS:
   "git@github.com:berbix/berbix-ios-spec.git":
     - Berbix
-  https://github.com/CocoaPods/Specs.git:
-    - Sentry
+    - BerbixAdvanced
 
 SPEC CHECKSUMS:
-  Berbix: a680dee0a0aa2fe337064d09fcb28334509b574a
-  Sentry: 9b922b396b0e0bca8516a10e36b0ea3ebea5faf7
+  Berbix: 4437194569af94e5b569cb84b3d8799daf80a221
+  BerbixAdvanced: dd2c799d913ae4e11a854e6713febc38b3493129
 
-PODFILE CHECKSUM: 044f709b64b7d78867f1eb2ef7bde454e9905d8d
+PODFILE CHECKSUM: b60c1b7085a13f0ab943a355f2166c2bd7d06f30
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
