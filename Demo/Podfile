@@ -4,5 +4,5 @@ target 'Demo' do
   source 'https://cdn.cocoapods.org/'
   source 'git@github.com:berbix/berbix-ios-spec.git'
 
-  pod 'Berbix', '3.0.6'
+  pod 'Berbix', '3.1.0'
 end
